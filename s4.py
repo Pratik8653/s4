@@ -352,7 +352,7 @@ def show_help(message):
 💥 /myinfo
 
 𝘽𝙪𝙮 :- @black_devilyt
-𝙊𝙛𝙛𝙞𝙘𝙞𝙖𝙡 :- @S4xOFFICIALxGRP
+𝙊𝙛𝙛𝙞𝙘𝙞𝙖𝙡 :- @black_devilyt
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
